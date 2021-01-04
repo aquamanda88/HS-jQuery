@@ -63,10 +63,6 @@ header .iconList .fbText {
   color: #4460A0;
 }
 
-header .iconList .twitterList {
-  margin-right: 30px;
-}
-
 header .iconList .twitterText {
   color: #00AAEC;
 }
@@ -110,7 +106,7 @@ nav .dropdown-open li a:hover {
   background: #edf3f7;
 }
 
-.bannerBlock {
+.bannerImg {
   background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
   background-size: auto;
   background-repeat: no-repeat;
@@ -118,19 +114,52 @@ nav .dropdown-open li a:hover {
   padding: 78px 0;
 }
 
-.bannerBlock .slogan {
+.bannerImg .slogan {
   padding: 20px 0;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 
-.bannerBlock .slogan h2 {
+.bannerImg .slogan h2 {
   font-weight: 300;
 }
 
-.slideBlock img {
+.swiper-container {
+  width: 100%;
+  height: 518px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-size: cover;
+  background-position: center;
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slide1 {
+  background-image: url(https://imgur.com/dDq1cij.png);
+}
+
+.slide2 {
+  background-image: url(https://imgur.com/SehGMEK.png);
+}
+
+.slide3 {
+  background-image: url(https://i.imgur.com/ApuJz1H.png);
 }
 
 .contentBlock {
