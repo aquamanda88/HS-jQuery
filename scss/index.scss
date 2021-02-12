@@ -72,39 +72,19 @@ nav{
             padding-right: 20px;
             text-align: center;
         }
-    }
-    .dropdown-open{
-        display: none;
-        padding: 0;
-        text-align: center;
-        li a{
-            padding: 5px 10px;
-            background: aliceblue;
-        }
-        li a:hover{
+        .dropdown-item{
             color: #00CC99;
-            background: #edf3f7;
+            cursor: pointer;
+        }
+        .dropdown-item.active, .dropdown-item:active {
+            color: #fff;
         }
     }
 }
-.bannerImg{
-    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 78px 0;
-    .slogan{
-        padding: 20px 0;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        h2{
-            font-weight: 300;
-        }
-    }
-}
+
 .swiper-container{
     width: 100%;
-    height: 518px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -114,7 +94,6 @@ nav{
     font-size: 18px;
     background-size: cover;
     background-position: center;
-    filter: brightness(.7);
   
     /* Center slide text vertically */
     display: -webkit-box;
@@ -129,16 +108,28 @@ nav{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    .slogan{
+        padding: 20px 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        width: 100%;
+        h2{
+            font-weight: 300;
+        }
+    }
 }
   
-  .slide1{
-    background-image: url(https://imgur.com/dDq1cij.png);
+.slide1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
 }
-  .slide2{
-    background-image: url(https://imgur.com/SehGMEK.png);
+.slide2{
+    background-image: url(https://i.imgur.com/NSDRTAu.png);
 }
-  .slide3{
-    background-image: url(https://i.imgur.com/ApuJz1H.png);
+.slide3{
+    background-image: url(https://i.imgur.com/lG6ax2O.png);
+}
+.slide4{
+    background-image: url(https://i.imgur.com/Qyr7RE1.png);
 }
 
 .contentBlock{
@@ -249,6 +240,7 @@ footer{
     right: 10px;
     bottom: 10px;
     transition: 0.15s;
+    z-index: 1080;
 }
 .topBtn:hover{
     filter: brightness(.7);
