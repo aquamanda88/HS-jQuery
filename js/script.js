@@ -4,14 +4,25 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     $(this).ekkoLightbox();
 });
 
-// 回到最上面按鈕
-$(document).ready(function(){
-    $('.topBtn').click(function(event){
-      event.preventDefault();
-      $('html, body').animate({
-        scrollTop: 0
-      }, 500);
-    });
+$(function (){
+  var $win = $(window);    
+  // 當使用者滾動到離頂部 100px 時，展示回到最上層功能按鈕
+  $win.scroll(function (){
+      if ($win.scrollTop() > 100){    
+          $(".topBtn").fadeIn(200);
+      } else{    
+          $(".topBtn").fadeOut(200);
+      }    
+  });
+  // 回到最上層功能按鈕
+  $(document).ready(function(){
+      $('.topBtn').click(function(event){
+          event.preventDefault();
+          $('html, body').animate({
+          scrollTop: 0
+          }, 500);
+      });
+  });
 });
 
 // 下拉選單
