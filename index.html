@@ -53,17 +53,17 @@
                     <li>
                         <a href="#">首頁</a>
                     </li>
-                    <li>
-                        <a href="#" class="dropdown">產品介紹</a>
-                        <ul class="dropdown-open">
+                    <li class="dropdown">
+                        <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">產品介紹</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <li>
-                                <a href="#cardList">課程教學</a>
+                                <a class="dropdown-item">課程教學</a>
                             </li>
                             <li>
-                                <a href="#difference">差異比較</a>
+                                <a class="dropdown-item">差異比較</a>
                             </li>
                             <li>
-                                <a href="#feedbackForm">回饋表單</a>
+                                <a class="dropdown-item">回饋表單</a>
                             </li>
                         </ul>
                     </li>
@@ -75,20 +75,44 @@
         </div>
     </nav>
     <section class="bannerBlock">
-        <div class="bannerImg">
-            <div class="slogan">
-                <div class="container">
-                    <div class="row">
-                        <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide1"></div>
-                <div class="swiper-slide slide2"></div>
-                <div class="swiper-slide slide3"></div>
+                <div class="swiper-slide slide1">
+                    <div class="slogan">
+                        <div class="container">
+                            <div class="row">
+                                <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="slogan">
+                        <div class="container">
+                            <div class="row">
+                                <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3">
+                    <div class="slogan">
+                        <div class="container">
+                            <div class="row">
+                                <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide4">
+                    <div class="slogan">
+                        <div class="container">
+                            <div class="row">
+                                <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Add Pagination-->
             <div class="swiper-pagination"></div>
@@ -99,7 +123,7 @@
     </section>
     <main class="container contentBlock">
         <div>
-            <ul class="cardList d-flex justify-content-around p-0" id="cardList">
+            <ul class="cardList d-flex justify-content-around p-0">
                 <li class="card">
                     <div class="d-flex flex-column align-items-center justify-content-between">
                         <a href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" data-toggle="lightbox" data-gallery="img-gallery">
@@ -140,7 +164,7 @@
                     </div>
                 </li>
             </ul>
-            <h2 class="tableTitle" id="difference">線上及實體課程的差異</h2>
+            <h2 class="tableTitle">線上及實體課程的差異</h2>
             <table class="lessonTable">
                 <thead>
                     <tr>
@@ -192,7 +216,7 @@
         </div>
     </main>    
     <form class="container-fluid formBlock">
-        <h2 class="formTitle" id="feedbackForm">對我們課程有興趣嗎？<br>歡迎留下您的資料</h2>
+        <h2 class="formTitle">對我們課程有興趣嗎？<br>歡迎留下您的資料</h2>
         <div class="formContent d-flex">
             <div class="col-6">
                 <textarea class="textareaBlock form-control" id="exampleFormControlTextarea1"></textarea>
